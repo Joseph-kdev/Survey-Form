@@ -77,9 +77,32 @@ button{
     -o-border-radius: 10px;
     border: hidden;
 }
- 
-@media all and (max-width:768px) {
+@media (max-width:1120px) {
     #survey-form{
+        margin: auto 10%;
+    }
+}
+@media (max-width:767px) {
+     #survey-form{
         margin: 20px 5%;
+    }
+    p{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .inputBoxes,#dropdown{
+        padding-left: 10px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+    button{
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
     }
 }
