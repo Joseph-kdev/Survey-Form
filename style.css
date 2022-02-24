@@ -8,7 +8,7 @@ body{
 
 #title{
     font-family: sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
 }
 #description{
@@ -16,9 +16,10 @@ body{
     font-size: 19px;
     padding: 0px 15% ;
     text-align: center;
+    font-weight: 200;
 }
 #survey-form{
-    background-color: rgba(0, 0, 139, 0.685);
+    background-color: rgba(0, 0, 139, 0.801);
     margin: 30px 25%;
     padding: 2% 5%;
     font-family: serif;
@@ -90,6 +91,9 @@ button{
         margin-top: 20px;
         margin-bottom: 10px;
     }
+    #description{
+        padding:0px 3%;
+    }
     .inputBoxes,#dropdown{
         padding-left: 10px;
         border-radius: 15px;
@@ -104,5 +108,11 @@ button{
         -moz-border-radius: 40px;
         -ms-border-radius: 40px;
         -o-border-radius: 40px;
+    }
+    body{
+    background-image: linear-gradient(rgba(0, 0, 139, 0.5),rgba(0, 0, 139, 0.5)), url("https://images.unsplash.com/photo-1572537577590-ac6a88150100?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTl8fGdhbWluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     }
 }
