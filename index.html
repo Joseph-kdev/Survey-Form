@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+            <h1 id="title">Gamer Check Survey Form</h1>
+                <p id="description">For the real gamer,thank you for taking the time to contribute your thoughts
+                    on what makes you ,you.
+                </p>
+        <!-- survey form -->
+        <div>
+        <form action="" method="post" id="survey-form">
+
+            <label for="name" id="name-label">Name</label><br>
+            <input type="text" id="name" name="Name" class="inputBoxes" placeholder="Enter your name" required><br>
+
+            <label for="email" id="email-label">Email</label><br>
+            <input type="email" id="email" name="email" class="inputBoxes" placeholder="Enter your Email" required><br>
+
+            <label for="number" id="number-label">Age(optional)</label><br>
+            <input type="number" id="number" name="age" class="inputBoxes" min="10" max="100" placeholder="age" required>
+    
+            <p>Which option best shows your most preferred gaming platform?</p>
+            <select name="platform" id="dropdown" required>
+                <option disabled selected value>Select platform</option>
+                <option value="xbox">Xbox</option>
+                <option value="Ps">Play Station</option>
+                <option value="android">Android</option>
+                <option value="ios">Iphone/Ipad</option>
+            </select>
+    
+            <p>Would you describe gaming as a coping mechanism for you?</p>
+            <label for="yes">
+                <input value="yes" type="radio" name="mech">Yes
+            </label><br>
+            <label for="no">
+                <input value="no" type="radio" name="mech">No
+            </label><br>
+            <label for="unsure">
+                <input type="radio" name="mech" value="unsure">Not sure
+            </label><br>
+            
+            <p>How regularly do you game?</p>
+            <select name="time-frame" id="dropdown" required>
+                <option disabled selected value>Select an option</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">More than 4 days in a week</option>
+                <option value="once-week">Once in a week</option>
+                <option value="fulltime">Fulltime</option>
+            </select>
+
+            <p>Which of these game franchises is among your favorites?</p>
+            <label for="COD"><input value="COD" type="checkbox" name="game">Call of Duty</label><br>
+            <label for="NFS"><input value="NFS" type="checkbox" name="game">Need for Speed</label><br>
+            <label for="FIFA"><input value="FIFA" type="checkbox" name="game">FIFA</label><br>
+            <label for="uncharted"><input value="uncharted" type="checkbox" name="game">Uncharted</label><br>
+            <label for="LOu"><input value="LOU" type="checkbox" name="game">The Last of Us</label><br>
+            <label for="spidey"><input value="spidey" type="checkbox" name="game">Spiderman</label><br>
+            <label for="war"><input value="war" type="checkbox" name="game">God of War</label><br>
+            <label for="forza"><input value="forza" type="checkbox" name="game">Forza</label><br>
+            <label for="EA"><input value="EA" type="checkbox" name="game">Battlefield</label>
+            <!-- comment section -->
+            <div>
+            <p>Leave some ideas or suggestions on the future of gaming as you see it</p>
+            <textarea id="textarea" name="remarks" placeholder="Enter remarks here..."></textarea>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    </body>
+
+
+</html>
